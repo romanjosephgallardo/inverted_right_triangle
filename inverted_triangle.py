@@ -6,5 +6,12 @@ def inverted_triangle(height_value):
         print("*" * height_value)
 
 # User input or the height of the triangle
-height_n = int(input("Enter the height of the triangle: "))
-inverted_triangle(height_n)
+try:
+    height_n = int(input("Enter the height of the triangle: "))
+    inverted_triangle(height_n)
+except ValueError:
+    print("Invalid input. Please enter an integer.")
+    exit()
+except:
+    print("Something went wrong. Exiting the program.")
+    exit()
