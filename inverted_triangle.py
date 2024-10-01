@@ -1,20 +1,8 @@
-'''
-Generate an inverted right triangle of height n.
+# Inverted triangle
 
-Sample output
-Enter the height of the triangle: 6
-******
-*****
-****
-***
-**
-*
-'''
-
-#pseudocode
-# Get the height of the triangle
+# User input or the height of the triangle
 height_n = int(input("Enter the height of the triangle: "))
 
-# Generate the triangle
+# Generate and print the triangle
 for height_value in range(height_n, 0, -1):
     print("*" * height_value)
